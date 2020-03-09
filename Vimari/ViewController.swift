@@ -53,7 +53,8 @@ class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        appNameLabel.stringValue = "Vimari"
+        let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String
+        appNameLabel.stringValue = "Vimari \(version ?? "")"
 
         refreshExtensionStatus()
     }
