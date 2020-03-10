@@ -106,23 +106,19 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
     }
 
     private func changeTab(withDirection direction: TabDirection, from page: SFSafariPage, completionHandler: (() -> Void)? = nil ) {
-        page.getContainingTab(completionHandler: { currentTab in
-            currentTab.getContainingWindow(completionHandler: { window in
-                window?.getAllTabs(completionHandler: { tabs in
-                    if let currentIndex = tabs.firstIndex(of: currentTab) {
-                        let indexStep = direction == TabDirection.forward ? 1 : -1
-
-                        // Wrap around the ends with a modulus operator.
-                        // % calculates the remainder, not the modulus, so we need a
-                        // custom function.
-                        let newIndex = mod(currentIndex + indexStep, tabs.count)
-    
-                        tabs[newIndex].activate(completionHandler: completionHandler ?? {})
-                        
+        SFSafariApplication.getActiveWindow {
+            (window) in window?.getActiveTab {
+                (current_tab) in window?.getAllTabs {
+                    (tabs) in
+                    for (index, tab) in tabs.enumerated() {
+                        if current_tab == tab {
+                            let indexStep = direction == TabDirection.forward ? 1 : -1
+                            let newActiveTabIdx = ((index + indexStep) % tabs.count + tabs.count) % tabs.count
+                            tabs[newActiveTabIdx].activate(completionHandler: {})
+                        }
                     }
-                })
-            })
-        })
+                }
+            }}
     }
     
     private func closeTab(from page: SFSafariPage) {
