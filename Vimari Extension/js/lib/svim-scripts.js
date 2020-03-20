@@ -1,3 +1,7 @@
+/*
+ * Code in this file is taken directly from sVim, it has been adjusted to
+ * work with Vimari.
+ */
 
 // We assume settings to be defined globally, as described in `injected.js`.
 
@@ -23,7 +27,6 @@ function sVimScrollBy(x, y) {
     // Animate the scroll
     function animLoop() {
         const toScroll = Math.round(easeOutExpo(i, 0, y, settings.scrollDuration) - delta);
-        console.log({toScroll, i, delta})
         if (toScroll !== 0) {
             if (y) {
                 window.scrollBy(0, toScroll);
