@@ -14,6 +14,7 @@ function sVimScrollBy(x, y) {
         return;
     }
     window.cancelAnimationFrame(animationFrame);
+    animationFrame = null;
 
     // Smooth scroll
     let i = 0;
@@ -35,7 +36,10 @@ function sVimScrollBy(x, y) {
             }
         }
 
-        if (i < this.settings.scrollDuration) {
+        if (i < settings.scrollDuration) {
+            // By requesting the animation frame we tell the browser that we
+            // want to perform an animation and that before the redraw we
+            // would like it to call our animLoop function.
             animationFrame = window.requestAnimationFrame(animLoop);
         }
 
