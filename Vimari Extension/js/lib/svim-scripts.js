@@ -13,8 +13,6 @@ function sVimScrollBy(x, y) {
         window.scrollBy(x, y);
         return;
     }
-    window.cancelAnimationFrame(animationFrame);
-    animationFrame = null;
 
     // Smooth scroll
     let i = 0;
