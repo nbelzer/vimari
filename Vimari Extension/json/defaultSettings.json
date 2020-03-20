@@ -13,7 +13,7 @@
   "scrollUpHalfPage": "u",
   "scrollDownHalfPage": "d",
   "smoothScroll": true,
-  "scrollDuration": 150,
+  "scrollDuration": 25,
   "goToPageTop": "g g",
   "goToPageBottom": "shift+g",
   "goBack": "shift+h",
