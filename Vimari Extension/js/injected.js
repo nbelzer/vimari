@@ -6,7 +6,6 @@
  * therefore we can stop certain pages (google) stealing the focus.
  */
 
-
 /*
  * Global vars
  *
@@ -43,16 +42,16 @@ var actionMap = {
         function() { safari.extension.dispatchMessage("tabBackward"); },
 
 	'scrollDown':
-		function() { window.scrollBy(0, settings.scrollSize); },
+		function() { sVimScrollBy(0, settings.scrollSize); },
 
 	'scrollUp':
-		function() { window.scrollBy(0, -settings.scrollSize); },
+		function() { sVimScrollBy(0, -settings.scrollSize); },
 
 	'scrollLeft':
-		function() { window.scrollBy(-settings.scrollSize, 0); },
+		function() { sVimScrollBy(-settings.scrollSize, 0); },
 
 	'scrollRight':
-		function() { window.scrollBy(settings.scrollSize, 0); },
+		function() { sVimScrollBy(settings.scrollSize, 0); },
 
 	'goBack':
 		function() { window.history.back(); },
@@ -73,16 +72,16 @@ var actionMap = {
 		function() { safari.self.tab.dispatchMessage('closeTab', 1); },
 
 	'scrollDownHalfPage':
-		function() { window.scrollBy(0, window.innerHeight / 2); },
+		function() { sVimScrollBy(0, window.innerHeight / 2); },
 
 	'scrollUpHalfPage':
-		function() { window.scrollBy(0, window.innerHeight / -2); },
+		function() { sVimScrollBy(0, window.innerHeight / -2); },
 
 	'goToPageBottom':
-		function() { window.scrollBy(0, document.body.scrollHeight); },
+		function() { sVimScrollBy(0, document.body.scrollHeight); },
 
 	'goToPageTop':
-		function() { window.scrollBy(0, -document.body.scrollHeight); }
+		function() { sVimScrollBy(0, -document.body.scrollHeight); }
 };
 
 // Meant to be overridden, but still has to be copy/pasted from the original...

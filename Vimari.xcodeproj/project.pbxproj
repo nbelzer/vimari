@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01D47F21242508BA0036476B /* svim-scripts.js in Resources */ = {isa = PBXBuildFile; fileRef = 01D47F20242508BA0036476B /* svim-scripts.js */; };
 		B1E3C17023A65ED400A56807 /* ConfigurationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E3C16F23A65ED400A56807 /* ConfigurationModel.swift */; };
 		B1FD3B9923A588DE00677A52 /* defaultSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = B1FD3B9823A588DE00677A52 /* defaultSettings.json */; };
 		E320D0662337FC9800F2C3A4 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = E320D0652337FC9800F2C3A4 /* Credits.rtf */; };
@@ -57,6 +58,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		01D47F20242508BA0036476B /* svim-scripts.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "svim-scripts.js"; sourceTree = "<group>"; };
 		B1E3C16F23A65ED400A56807 /* ConfigurationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationModel.swift; sourceTree = "<group>"; };
 		B1FD3B9823A588DE00677A52 /* defaultSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = defaultSettings.json; sourceTree = "<group>"; };
 		E320D0652337FC9800F2C3A4 /* Credits.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = Credits.rtf; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 		E380F27D233183EE00640547 /* lib */ = {
 			isa = PBXGroup;
 			children = (
+				01D47F20242508BA0036476B /* svim-scripts.js */,
 				E380F27E233183EE00640547 /* mousetrap.js */,
 				E380F27F233183EE00640547 /* vimium-scripts.js */,
 			);
@@ -302,6 +305,7 @@
 				E380F287233183EF00640547 /* keyboard-utils.js in Resources */,
 				E380F284233183EF00640547 /* global.js in Resources */,
 				E380F289233183EF00640547 /* vimium-scripts.js in Resources */,
+				01D47F21242508BA0036476B /* svim-scripts.js in Resources */,
 				E380F2672331806500640547 /* SafariExtensionViewController.xib in Resources */,
 				E380F286233183EF00640547 /* mocks.js in Resources */,
 				E380F283233183EF00640547 /* link-hints.js in Resources */,
