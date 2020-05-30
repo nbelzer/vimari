@@ -2,8 +2,12 @@ Changelog
 -------------
 
 ### Unreleased
-- Update moustrap library to v1.6.5.
-- Fix isolation from default website actions in normal mode [#1](https://github.com/nbelzer/vimari/issues/1).
+* Update moustrap library to v1.6.5.
+* Fix isolation from default website actions in normal mode [#1](https://github.com/nbelzer/vimari/issues/1).
+* Add configuration for keys and preferences. Accessed in preferences pane.
+    * Options represented in json structure.
+    * Default edit using textedit.
+* Add smooth scroll option (based on sVim scrolling mechanics)
 
 ### 2.0.3 (2019-09-26)
 
