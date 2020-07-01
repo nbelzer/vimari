@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		013332FC24ACD20100D319D9 /* ConfigurationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013332FB24ACD20100D319D9 /* ConfigurationView.swift */; };
+		013332FE24ACF01500D319D9 /* ExtensionStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013332FD24ACF01500D319D9 /* ExtensionStatus.swift */; };
+		0133330024ACFF5500D319D9 /* ExtensionCommunicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 013332FF24ACFF5500D319D9 /* ExtensionCommunicator.swift */; };
 		01D47F21242508BA0036476B /* svim-scripts.js in Resources */ = {isa = PBXBuildFile; fileRef = 01D47F20242508BA0036476B /* svim-scripts.js */; };
 		B1E3C17023A65ED400A56807 /* ConfigurationModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1E3C16F23A65ED400A56807 /* ConfigurationModel.swift */; };
 		B1FD3B9923A588DE00677A52 /* defaultSettings.json in Resources */ = {isa = PBXBuildFile; fileRef = B1FD3B9823A588DE00677A52 /* defaultSettings.json */; };
@@ -58,6 +61,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		013332FB24ACD20100D319D9 /* ConfigurationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationView.swift; sourceTree = "<group>"; };
+		013332FD24ACF01500D319D9 /* ExtensionStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionStatus.swift; sourceTree = "<group>"; };
+		013332FF24ACFF5500D319D9 /* ExtensionCommunicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionCommunicator.swift; sourceTree = "<group>"; };
 		01D47F20242508BA0036476B /* svim-scripts.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = "svim-scripts.js"; sourceTree = "<group>"; };
 		B1E3C16F23A65ED400A56807 /* ConfigurationModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigurationModel.swift; sourceTree = "<group>"; };
 		B1FD3B9823A588DE00677A52 /* defaultSettings.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = defaultSettings.json; sourceTree = "<group>"; };
@@ -145,6 +151,9 @@
 				E380F2502331806400640547 /* ViewController.swift */,
 				E380F2522331806500640547 /* Assets.xcassets */,
 				E380F2542331806500640547 /* Info.plist */,
+				013332FB24ACD20100D319D9 /* ConfigurationView.swift */,
+				013332FD24ACF01500D319D9 /* ExtensionStatus.swift */,
+				013332FF24ACFF5500D319D9 /* ExtensionCommunicator.swift */,
 			);
 			path = Vimari;
 			sourceTree = "<group>";
@@ -250,7 +259,7 @@
 		E380F23E2331806400640547 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1100;
+				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1100;
 				ORGANIZATIONNAME = net.televator;
 				TargetAttributes = {
@@ -321,6 +330,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E380F2512331806400640547 /* ViewController.swift in Sources */,
+				013332FE24ACF01500D319D9 /* ExtensionStatus.swift in Sources */,
+				013332FC24ACD20100D319D9 /* ConfigurationView.swift in Sources */,
+				0133330024ACFF5500D319D9 /* ExtensionCommunicator.swift in Sources */,
 				E380F24C2331806400640547 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -483,9 +495,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Vimari Extension/Vimari_Extension.entitlements";
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y48UDGWSSQ;
+				DEVELOPMENT_TEAM = 8QNS3SVZDK;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Vimari Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -506,9 +518,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Vimari Extension/Vimari_Extension.entitlements";
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = Y48UDGWSSQ;
+				DEVELOPMENT_TEAM = 8QNS3SVZDK;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Vimari Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -530,10 +542,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Vimari/Vimari.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = Y48UDGWSSQ;
+				DEVELOPMENT_TEAM = 8QNS3SVZDK;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Vimari/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -553,10 +565,10 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Vimari/Vimari.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = Y48UDGWSSQ;
+				DEVELOPMENT_TEAM = 8QNS3SVZDK;
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = Vimari/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
