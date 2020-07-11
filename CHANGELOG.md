@@ -3,7 +3,8 @@ Changelog
 
 ### Unreleased
 - Update moustrap library to v1.6.5.
-- Fix isolation from default website actions in normal mode [#1](https://github.com/nbelzer/vimari/issues/1).
+- Fix isolation from default website actions in normal mode [nbelzer/#1](https://github.com/nbelzer/vimari/issues/1).
+- Add temporary solution for non-blurrable elements [nbelzer/#3](https://github.com/nbelzer/vimari/issues/3)
 
 ### 2.0.3 (2019-09-26)
 

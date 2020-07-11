@@ -167,6 +167,12 @@ function unbindKeyCodes() {
  */
 function stopSitePropagation() {
 	return function (e) {
+        if (e.key == "Escape") {
+            // If we are inside an active element, pressing escape
+            // should blur it.  However as this is not the default
+            // behaviour in Safari we use this custom function
+            e.srcElement.blur()
+        }
 		if (insertMode === false && !isActiveElementEditable()) {
 			e.stopPropagation()
 		}
