@@ -82,7 +82,13 @@ var actionMap = {
 		function() { window.scrollBy(0, document.body.scrollHeight); },
 
 	'goToPageTop':
-		function() { window.scrollBy(0, -document.body.scrollHeight); }
+	    function() { window.scrollBy(0, -document.body.scrollHeight); },
+
+    'copyCurrentUrl':
+        function() { copyToClipboard(window.location.href); },
+
+    'copyLinkUrl':
+        function() { alert("Vimari: unsupported action"); }
 };
 
 // Meant to be overridden, but still has to be copy/pasted from the original...
@@ -200,6 +206,11 @@ function isEditable(target) {
  */
 function isEmbed(element) { return ["EMBED", "OBJECT"].indexOf(element.tagName) > 0; }
 
+
+/* Use the Clipboard API to copy text to the clipboard. */
+function copyToClipboard(str) {
+    navigator.clipboard.writeText(str)
+}
 
 // ==========================
 // Message handling functions

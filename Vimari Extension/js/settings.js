@@ -27,6 +27,9 @@ function getSettings() {
         'closeTabReverse': 'shift+x',
 
         'openTab': 't',
+        
+        'copyCurrentUrl': 'y y',
+        'copyLinkUrl': 'y f',
     };
 }
 
